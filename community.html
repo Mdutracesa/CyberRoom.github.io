@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>community login</title>
+    <style>
+      body{ background:#213A57;
+           font-family: sans-serif;
+           background:linear-gradient(to right,#213A57,#14919B) 
+          }
+      h1{ color:whitesmoke}
+      .container{background: #0ad1c8;
+                 width: 450px;
+                 padding: 1.5rem;
+                 margin: 50px auto;
+                 border-radius: 10px;
+                 box-shadow: 0 20px 35px rgba(0,0,1,0);}
+      input{color: inherit;
+             width: 100%;
+             background-color: transparent;
+             border: none;
+             border-bottom: 1px solid #757575;
+             padding-left: 1.5rem;
+             font-size: 15px;
+            }
+      .input-box{padding: 1% 0;
+                 position: relative;
+                }
+      .btn{ font-size: 1.1rem;
+            padding: 8px 0;
+           border-radius: 5px;
+           outline: none;
+           width: 100%;
+           background: rgb(9, 99, 110);
+           color: white;
+           cursor: pointer;
+           transition: 0.9s;
+          }
+ 
+    </style>
+   
+</head>
+<body>
+  <div class="container" id="signup" style="display:none;">
+    <form method="post" action="">
+      <h1>Register</h1>
+      <div class="input-box">
+        <input type="text" placeholder="first Name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Surname" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="User Name" required>
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Email" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="password" required>
+      </div>
+      <input type="submit" class="btn" value="SignUp" name="SignUp">
+      
+    </form>
+    <div class="links">
+      <p>Already Have Account?</p>
+      <button id="loginButton">Log In</button>
+    </div>
+  </div>
+
+  <div class="container" id="login">
+    <form method="post" action="#">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="User Name" required>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="password" required>
+      </div>
+      <input type="submit" class="btn" value="login" name="login">
+      <div class="remember-forgot">
+        <a href="#">Forgot password</a>
+      </div>
+      
+    </form>
+    <div class="links">
+      <p>Dont have account?</p>
+      <button id="signUpButton">Sign Up</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+  
+</body>
+</html>
